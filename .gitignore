@@ -1,0 +1,5 @@
+# Ignore locally built files
+Gemfile
+Gemfile.lock
+
+/_site
