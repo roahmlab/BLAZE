@@ -10,7 +10,7 @@
 # Front matter. This is where you specify a lot of page variables.
 layout: default
 title:  "Phasing Through the Flames"
-date:   2024-10-17 10:00:00 -0500
+date:   2025-05-02 10:40:00 -0500
 description: >- # Supports markdown
   Rapid Motion Planning with the AGHF PDE for Arbitrary Objective Functions and Constraints
 show-description: true
@@ -30,12 +30,26 @@ image:
 
 # Only the first author is supported by twitter metadata
 authors:
+  - name: Challen Enninful Adu*
+    email: enninful@umich.edu
+  - name: Cesar E. Ramos Chuquiure*
+    email: cesarch@umich.edu
+  - name: Yutong Zhou
+    email: yutongzh@umich.edu
+  - name: Pearl Lin
+    email: pearllin@umich.edu
+  - name: Ruikai Yang
+    email: ruikai@umich.edu
+  - name: Bohao Zhang
+    email: jimzhang@umich.edu
+  - name: Shubham Singh
+    email: singh281@utexas.edu
   - name: Ram Vasudevan
     email: ramv@umich.edu
 
 # If you just want a general footnote, you can do that too.
 author-footnotes:
-  All authors affiliated with the department of Robotics at the University of Michigan, Ann Arbor.
+  \* Denotes equal contribution
 
 links:
   - icon: bi-file-earmark-text
@@ -66,38 +80,23 @@ links:
 ---
 
 <!-- BEGIN OVERVIEW FIGURE -->
-<!-- <div class="fullwidth video-container" style="display: flex; flex-wrap:nowrap; gap: 10px; padding: 0 0.2em; justify-content: center">
-  <div class="video-item" style="flex: 1 1 50%; max-width: 50%;">
+<div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+  <div class="video-item" style="flex: 1 1 100%; max-width: 100%;">
     <video
-      class="autoplay-on-load"
+      class="autoplay-in-frame"
       preload="none"
-      controls
+      disableremoteplayback
       disablepictureinpicture
       playsinline
       muted
       loop
+      onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/aghf_digit_stretch.mp4" type="video/mp4">
+      <source src="assets/scenario_1_hardware.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
-    <p>Digit Doing Yoga Pose (Generated in ~3s) </p>
   </div>
-  <div class="video-item" style="flex: 1 1 50%; max-width: 50%;">
-    <video
-      class="autoplay-on-load"
-      preload="none"
-      controls
-      disablepictureinpicture
-      playsinline
-      muted
-      loop
-      style="display:block; width:100%; height:auto;">
-      <source src="assets/aghf_digit_stair.mp4" type="video/mp4">
-      Your browser does not support this video.
-    </video>
-    <p>Digit Stepping on Box (Generated in ~2s) </p>
-  </div>
-</div>  -->
+</div>
 <!-- END OVERVIEW VIDEOS -->
 
 
@@ -173,7 +172,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_16_sim_iso_iniguess.mp4" type="video/mp4">
+      <source src="assets/scenario_3_sim_iso_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -189,7 +188,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_16_sim_iso_solution.mp4" type="video/mp4">
+      <source src="assets/scenario_3_sim_iso_solution.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -209,7 +208,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_4_sim_front_iniguess.mp4" type="video/mp4">
+      <source src="assets/scenario_2_sim_front_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -225,7 +224,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_4_sim_front_solution.mp4" type="video/mp4">
+      <source src="assets/scenario_2_sim_front_solution.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -246,7 +245,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_18_sim_iso_iniguess.mp4" type="video/mp4">
+      <source src="assets/scenario_4_sim_iso_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -262,7 +261,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_18_sim_iso_solution.mp4" type="video/mp4">
+      <source src="assets/scenario_4_sim_iso_solution.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -271,8 +270,9 @@ All of these collision-free trajectories were generated in &le; 3 seconds
 
 ## Kinova Hardware Obstacle Avoidance
 
-<!-- Second batch of videos--> 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Initial Guess </p>
+<p style="text-align: center; margin-top: 5px; font-size: 20px"> Hardware scenario 1 (Solved in 3.1 seconds) </p>
+<!-- First batch of hardware videos--> 
+<p style="text-align: center; margin-top: 5px;"> Initial Guess </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 49%; max-width: 49%;">
     <video
@@ -285,7 +285,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_21_hardware_side_iniguess.mp4" type="video/mp4">
+      <source src="assets/scenario_1_hardware_side_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -300,14 +300,13 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_21_hardware_front_iniguess.mp4" type="video/mp4">
+      <source src="assets/scenario_1_hardware_front_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
 </div>
 
-<!-- Second batch of videos--> 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Solution on Hardware </p>
+<p style="text-align: center; margin-top: 5px;"> Solution on Hardware </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 100%; max-width: 100%;">
     <video
@@ -320,14 +319,14 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scenario_21_hardware.mp4" type="video/mp4">
+      <source src="assets/scenario_1_hardware.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
 </div>
 
-<!-- Second batch of videos--> 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Initial Guess </p>
+<!-- Second batch of hardware videos--> 
+<p style="text-align: center; margin-top: 5px; font-size: 20px"> Hardware scenario 2 (Solved in 2.74 seconds) </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 49%; max-width: 49%;">
     <video
@@ -340,7 +339,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scene_005_hardware_side.mp4" type="video/mp4">
+      <source src="assets/scene_2_hardware_side_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -355,13 +354,13 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scene_005_hardware_front.mp4" type="video/mp4">
+      <source src="assets/scene_2_hardware_front_iniguess.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
 </div>
 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Solution on Hardware </p>
+<p style="text-align: center; margin-top: 5px;"> Solution on Hardware </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 100%; max-width: 100%;">
     <video
@@ -374,13 +373,15 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/scene_5_hardware.mp4" type="video/mp4">
+      <source src="assets/scene_2_hardware.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
 </div>
 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Solution on Hardware </p>
+
+<!-- Third batch of hardware videos--> 
+<p style="text-align: center; margin-top: 5px; font-size: 20px"> Hardware scenario 3 (Solved in 2.45 seconds) </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 100%; max-width: 100%;">
     <video
@@ -393,7 +394,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
       loop
       onclick="this.paused ? this.play() : this.pause();"
       style="display:block; width:100%; height:auto;">
-      <source src="assets/hardware_bins.mp4" type="video/mp4">
+      <source src="assets/scene_3_hardware.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
   </div>
@@ -411,19 +412,6 @@ All of these collision-free trajectories were generated in &le; 3 seconds
 
 This project was developed in [Robotics and Optimization for Analysis of Human Motion (ROAHM) Lab](http://www.roahmlab.com/) at the University of Michigan - Ann Arbor.
 
-<!-- ```bibtex
-@ARTICLE{enninfulphlame2024,
-  author={Adu, Challen Enninful and Chuquiure, César E. Ramos and Zhang, Bohao and Vasudevan, Ram},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Bring the Heat: Rapid Trajectory Optimization With Pseudospectral Techniques and the Affine Geometric Heat Flow Equation}, 
-  year={2025},
-  volume={10},
-  number={4},
-  pages={4148-4155},
-  keywords={Heuristic algorithms;Heating systems;Robots;Trajectory optimization;Vectors;Partial differential equations;Dynamic programming;Planning;Optimal control;Faces;Optimization and optimal control;motion and path planning;integrated planning and control},
-  doi={10.1109/LRA.2025.3547299}}
-
-``` -->
 </div>
 
 
