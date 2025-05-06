@@ -52,22 +52,13 @@ author-footnotes:
   \* Denotes equal contribution
 
 links:
-  - icon: bi-file-earmark-text
-    icon-library: bootstrap-icons
-    text: Paper
-    url: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10919247
   - icon: arxiv
     icon-library: simpleicons
     text: ArXiv
-    url: https://arxiv.org/abs/2411.12962
+    url: https://arxiv.org/abs/2505.01589
   - icon: github
     icon-library: simpleicons
-    text: Code
-    url: https://github.com/roahmlab/BLAZE
-  - icon: bi-file-earmark-text
-    icon-library: bootstrap-icons
-    text: Supplementary Appendices
-    url: BLAZE_Appendices.pdf
+    text: Code (Coming Soon)
 
 # End Front Matter
 ---
@@ -412,8 +403,19 @@ All of these collision-free trajectories were generated in &le; 3 seconds
 
 This project was developed in [Robotics and Optimization for Analysis of Human Motion (ROAHM) Lab](http://www.roahmlab.com/) at the University of Michigan - Ann Arbor.
 
-</div>
+```bibtex
+@ARTICLE{enninfulchuquiureblaze2025,
+      title={Phasing Through the Flames: Rapid Motion Planning with the AGHF PDE for Arbitrary Objective Functions and Constraints}, 
+      author={Challen Enninful Adu and César E. Ramos Chuquiure and Yutong Zhou and Pearl Lin and Ruikai Yang and Bohao Zhang and Shubham Singh and Ram Vasudevan},
+      year={2025},
+      eprint={2505.01589},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2505.01589}, 
+}
 
+```
+</div>
 
 <!-- below are some special scripts -->
 <script>
