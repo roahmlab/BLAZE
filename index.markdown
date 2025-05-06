@@ -317,7 +317,8 @@ All of these collision-free trajectories were generated in &le; 3 seconds
 </div>
 
 <!-- Second batch of hardware videos--> 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Hardware scenario 2 (Solved in 2.74 seconds) </p>
+<p style="text-align: center; margin-top: 40px; font-size: 20px"> Hardware scenario 2 (Solved in 2.74 seconds) </p>
+<p style="text-align: center; margin-top: 5px;"> Initial Guess </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 49%; max-width: 49%;">
     <video
@@ -372,7 +373,7 @@ All of these collision-free trajectories were generated in &le; 3 seconds
 
 
 <!-- Third batch of hardware videos--> 
-<p style="text-align: center; margin-top: 5px; font-size: 20px"> Hardware scenario 3 (Solved in 2.45 seconds) </p>
+<p style="text-align: center; margin-top: 30px; font-size: 20px"> Hardware scenario 3 (Solved in 2.45 seconds) </p>
 <div class="video-container" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
   <div class="video-item" style="flex: 1 1 100%; max-width: 100%;">
     <video
